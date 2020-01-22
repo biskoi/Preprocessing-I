@@ -89,7 +89,12 @@ body{
 }
 
 section{
+	text-align: center;
 	margin: 3% 0%;
+
+	@media (max-width: 500px){
+		margin: 5% 0%;
+	}
 }
 
 h1{
@@ -99,6 +104,11 @@ h1{
 h2{
 	font-size: 3rem;
 	margin: 2%;
+}
+
+h3{
+	font-size: 2rem;
+	text-decoration: underline;
 }
 
 
@@ -112,13 +122,22 @@ nav{
 		text-decoration: none;
 		color: white;
 	}
+
+	@media (max-width: 500px){
+		.flexColumn();
+		height: 40vh;
+		margin: 2%;
+		a{
+			border: dotted 1px white;
+			border-radius: 20px;
+		}
+	}
 }
 
-.topSection{
+#topSection{
 	.whiteBg();
 	.flexRow();
 	align-items: center;
-	color: pink;
 
 	.me{
 		width: 20%;
@@ -128,12 +147,90 @@ nav{
 
 }
 
-.aboutSection{
+#aboutSection{
 	.whiteBg();
-	
-	div{
-		padding: 2%;
-		text-align: center;
+	padding: 2%;
+
+	div p{
+		margin-bottom: 2%;
 	}
 
+}
+
+#skillsSection{
+	.whiteBg();
+	text-align: center;
+	padding: 2%;
+
+	div{
+		padding: 2%;
+		margin-bottom: 2%;
+		.flexRow();
+		align-items: center;
+		justify-content: space-evenly;
+
+		ul{
+			text-align: left;
+			list-style: circle;
+			padding: 1%;
+
+			li{
+				padding: 2%;
+			}
+
+		}
+
+		video{
+			border-radius: 10px;
+		}
+
+		@media (max-width: 500px){
+			.flexColumn();
+
+			ul{
+				width: 60%;
+			}
+
+			video{
+				padding: 4% 0% 0 0;
+				width: 70%;
+			}
+		}
+	}
+
+}
+
+#portfolioSection{
+	.whiteBg();
+	padding: 2%;
+	
+	div{
+		margin: 1%;
+		.flexRow();
+		justify-content: center;
+
+		@media (max-width: 500px){
+			.flexColumn();
+		}
+
+		div{
+			.flexColumn();
+			justify-content: center;
+			
+			h3{
+				margin: 4%;
+			}
+		}
+
+		div img{
+			width: 30vh;
+			height: 30vh;
+		}
+	}
+
+}
+
+#contactSection{
+	.whiteBg();
+	padding: 2%;
 }
