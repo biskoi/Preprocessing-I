@@ -53,7 +53,87 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+/*Variables and mixins*/
+
+@font:  'Muli', sans-serif;
+
+
+.flexRow(){
+	display: flex;
+	justify-content: space-evenly;
 }
 
+.flexColumn(){
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.whiteBg(){
+	background-color: white;
+	border-radius: 20px;
+}
+
+/*End of variables and mixins*/
+
+html, body {
+	height: 100%;
+	font-size: 62.5%;
+	max-width: 100%;
+}
+
+body{
+	margin: 0% 10%;
+	background-color: pink;
+	font-family: @font;
+	font-size: 1.6rem;
+}
+
+section{
+	margin: 3% 0%;
+}
+
+h1{
+	font-size: 5rem;
+}
+
+h2{
+	font-size: 3rem;
+	margin: 2%;
+}
+
+
+nav{
+	text-align: center;
+	.flexRow();
+	padding: 5% 0%;
+	height: 5vh;
+
+	a{
+		text-decoration: none;
+		color: white;
+	}
+}
+
+.topSection{
+	.whiteBg();
+	.flexRow();
+	align-items: center;
+	color: pink;
+
+	.me{
+		width: 20%;
+		border-radius: 10px;
+		margin: 2%;
+	}
+
+}
+
+.aboutSection{
+	.whiteBg();
+	
+	div{
+		padding: 2%;
+		text-align: center;
+	}
+
+}
