@@ -56,6 +56,7 @@ table {
 /*Variables and mixins*/
 
 @font:  'Muli', sans-serif;
+@mainBg: white;
 
 
 .flexRow(){
@@ -69,7 +70,7 @@ table {
 }
 
 .whiteBg(){
-	background-color: white;
+	background-color: @mainBg;
 	border-radius: 20px;
 }
 
@@ -120,7 +121,7 @@ nav{
 
 	a{
 		text-decoration: none;
-		color: white;
+		color: @mainBg;
 	}
 
 	@media (max-width: 500px){
@@ -128,7 +129,7 @@ nav{
 		height: 40vh;
 		margin: 2%;
 		a{
-			border: dotted 1px white;
+			border: dotted 1px @mainBg;
 			border-radius: 20px;
 		}
 	}
