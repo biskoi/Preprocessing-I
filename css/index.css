@@ -140,9 +140,11 @@ body {
 }
 body {
   margin: 0% 10%;
-  background-color: pink;
   font-family: 'Muli', sans-serif;
   font-size: 1.6rem;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 1920px 1080px;
 }
 section {
   text-align: center;
@@ -162,24 +164,26 @@ h2 {
 }
 h3 {
   font-size: 2rem;
-  text-decoration: underline;
 }
 nav {
   text-align: center;
   display: flex;
   justify-content: space-evenly;
-  padding: 5% 0%;
-  height: 5vh;
+  margin: 1% auto 1% auto;
+  padding: 0.5% 0;
+  border-radius: 10px;
+  background-color: rgba(252, 99, 132, 0.507);
+  width: 40%;
 }
 nav a {
   text-decoration: none;
   color: white;
+  text-align: center;
 }
 @media (max-width: 500px) {
   nav {
     display: flex;
     flex-flow: column nowrap;
-    height: 40vh;
     margin: 2%;
   }
   nav a {
@@ -187,20 +191,91 @@ nav a {
     border-radius: 20px;
   }
 }
-#topSection {
-  background-color: white;
-  border-radius: 20px;
+.navTop {
+  text-decoration: underline;
+}
+#topContainer {
   display: flex;
   justify-content: space-evenly;
+  height: 45vh;
+  justify-content: center;
   align-items: center;
 }
+#topSection {
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  background-color: rgba(255, 194, 194, 0.26);
+  align-items: center;
+  margin-right: 3%;
+  width: 55%;
+}
 #topSection .me {
-  width: 20%;
-  border-radius: 10px;
-  margin: 2%;
+  width: 60%;
+  border-radius: 100%;
+}
+#topSection .cardInfo {
+  width: 40%;
+  text-align: left;
+  padding-left: 5%;
+}
+#topSection .cardInfo div {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 8% 0%;
+  justify-content: left;
+  font-size: 2.5rem;
+}
+#topSection .cardInfo div a {
+  margin-right: 4%;
+  color: #ff3aa6;
+  text-decoration: none;
+}
+#topSection .cardMe {
+  width: 40%;
+  padding: 2% 0;
+}
+.besideCard {
+  width: 25%;
+  height: 33vh;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.besideCard section {
+  background-color: rgba(250, 157, 157, 0.219);
+  border-radius: 20px;
+  padding: 4% 0;
+  height: 20vh;
+}
+.besideCard .beside1 {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2%;
+}
+.besideCard .beside1 p {
+  max-height: inherit;
+  width: 80%;
+}
+.besideCard .beside2 {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.besideCard .beside2 ul {
+  list-style: circle;
+  list-style-position: inside;
+  padding-top: 3%;
+  width: 50%;
+  text-align: center;
+}
+.besideCard .beside2 ul li {
+  padding: 2%;
 }
 #aboutSection {
-  background-color: white;
+  background-color: rgba(250, 201, 201, 0.61);
   border-radius: 20px;
   padding: 2%;
 }
@@ -208,7 +283,7 @@ nav a {
   margin-bottom: 2%;
 }
 #skillsSection {
-  background-color: white;
+  background-color: rgba(250, 201, 201, 0.61);
   border-radius: 20px;
   text-align: center;
   padding: 2%;
@@ -245,7 +320,7 @@ nav a {
   }
 }
 #portfolioSection {
-  background-color: white;
+  background-color: rgba(250, 201, 201, 0.61);
   border-radius: 20px;
   padding: 2%;
 }
@@ -270,11 +345,10 @@ nav a {
   margin: 4%;
 }
 #portfolioSection div div img {
-  width: 30vh;
   height: 30vh;
 }
 #contactSection {
-  background-color: white;
+  background-color: rgba(250, 201, 201, 0.61);
   border-radius: 20px;
   padding: 2%;
 }
